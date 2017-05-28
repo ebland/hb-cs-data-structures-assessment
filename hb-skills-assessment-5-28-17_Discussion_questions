@@ -1,0 +1,37 @@
+1) When calculating the Big O notation for a particular algorithm, it’s necessary to consider the length of time it takes for the algorithm to run as the algorithm’s workload approaches infinity. You can think of the workload as the number of tasks required to complete a job. What determines the workload of figuring out whether your box of animal crackers contains an elephant?
+
+ANSWER=     O(n) 
+
+2) Order the following runtimes in descending order of efficiency (that is, fastest runtimes first, slowest last) as n approaches infinity:
+
+    Answer Fastest = 1st) = O(1)
+                     2nd) = O(log n)
+                     3rd) = O(n)
+                     4th) = O(n log n)
+                     5th) = O(n^2)
+           Slowest = 6th) = O(2^n)
+
+STACK OR QUEUE?
+        
+1) The process of loading and unloading pallets onto a flatbed truck
+    
+    STACK
+
+2) Putting bottle caps on bottles of beer as they roll down an assembly line
+            
+    QUEUE
+
+3) Calculating the solution to this mathematical expression: 2 + (7 * 4) - (3 / 2)
+    
+    STACK
+
+Describe two more situations where a queue would be an appropriate data structure.
+    1) Torrent Downloading Application
+    2) Calling Center Application
+    
+Describe two more situations where a stack would be an appropriate data structure.
+
+    1) When you load bullets into the magazine of a gun. The last one to go in is fired first. 
+    
+    2) Sharing a 3 car garage that has one door with three room mates...the first car(roomate), needs to leave so the other two must move out of their way before the first can leave which makes them technically the last one out since they arrived and parked in the garage first before the other roommates.
+
