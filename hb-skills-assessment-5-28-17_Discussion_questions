@@ -1,8 +1,11 @@
+RUNTIME
+###################
 1) When calculating the Big O notation for a particular algorithm, it’s necessary to consider the length of time it takes for the algorithm to run as the algorithm’s workload approaches infinity. You can think of the workload as the number of tasks required to complete a job. What determines the workload of figuring out whether your box of animal crackers contains an elephant?
 
 ANSWER=     O(n) 
 
 2) Order the following runtimes in descending order of efficiency (that is, fastest runtimes first, slowest last) as n approaches infinity:
+
 
     Answer Fastest = 1st) = O(1)
                      2nd) = O(log n)
@@ -11,8 +14,9 @@ ANSWER=     O(n)
                      5th) = O(n^2)
            Slowest = 6th) = O(2^n)
 
+
 STACK OR QUEUE?
-        
+#####################
 1) The process of loading and unloading pallets onto a flatbed truck
     
     STACK
@@ -26,12 +30,76 @@ STACK OR QUEUE?
     STACK
 
 Describe two more situations where a queue would be an appropriate data structure.
+   
     1) Torrent Downloading Application
     2) Calling Center Application
     
 Describe two more situations where a stack would be an appropriate data structure.
 
     1) When you load bullets into the magazine of a gun. The last one to go in is fired first. 
-    
+
     2) Sharing a 3 car garage that has one door with three room mates...the first car(roomate), needs to leave so the other two must move out of their way before the first can leave which makes them technically the last one out since they arrived and parked in the garage first before the other roommates.
+
+
+LINKED LISTS
+######################
+1) Which are the nodes? What is the data for each node? Where is the head? Where is the tail? (Please be as specific as possible — exactly which parts of the diagram correspond to each part? Arrows? Boxes? Text?)
+
+    Boxes/Squares = Nodes
+    "LLIST" Node = Instance of Linked List (Instantiated)
+    "head" Node = location of LLIST 's "head" attribute 
+    "apple" = "head" of linked list
+    "cherry" = "tail" of linked list
+    nodes = "apple", "berry", and "cherry" 
+    arrows = point in the direction to the "next" node or item in the linked list until reaching the 
+        (square/box)/node that is labled "NONE" indicating the end of the list.
+
+2) What’s the difference between doubly- and singly-linked lists?
+
+In a singly
+
+Answer:  in a singly-linked list, each node keeps track of the Next value in the list, so the list goes only in one direction.  In a doubly-linked list, each node keeps track of the Next value and the Previous value, so the links go in both directions.
+
+    Why is it faster to append to a linked list if we keep track of the tail as an attribute?
+
+    If you don't keep track of the tail, then you have to iterate through the entire list to find the tail in order to append to it.  By keeping track of the tail as an attribute of the linked list, you can append without iterating through the whole list.  You just append to the tail, and update the list's tail attribute with the new value.
+
+
+TREES
+#######################
+
+1) Given the tree above, in what order would a Breadth First Search (BFS) algorithm visit each node until finding burritos (starting at food)? (Assume nodes are enqueued in left-to-right order.) Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+
+1-food
+2-Italian
+3-Indian
+4-Mexican
+5-lasagna
+6-pizza
+7-tikka masala
+8-saag
+9-burritos
+10-Found burritos
+
+2) Given the tree above, in what order would a Depth First Search (DFS) algorithm visit each node until finding Chicago-style (starting at food)? (Assume nodes are pushed in left-to-right order.) Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+
+1-food 
+2-Mexican
+3-enchilladas
+4tacos
+5-burritos
+6-Indian
+7-saag
+8-tikka masala
+9Italian
+10pizza
+11-Sicillian
+12-New York Style
+13-Chicago-style
+
+3) How is a binary search tree different from other trees?
+
+Binary search tree's nodes are sorted by one rule in which all nodes to the left side of main node have a key < value of middle-top one, while all nodes on the right side have higher values.
+    -other trees aren't in a specific order in the tree itself.
+
 
