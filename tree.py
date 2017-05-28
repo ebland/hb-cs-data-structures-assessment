@@ -26,9 +26,12 @@ class Node(object):
             2
         """
 
-        # FIXME
+        count = 0
+        for child in self.children:
+            count += 1
+            Node.get_num_children(child)
 
-        pass
+        return count
 
 
 class Tree(object):
@@ -93,8 +96,15 @@ class Tree(object):
 
         """
 
-        # FIXME
-        pass
+       to_visit = [self.root]
+
+        while to_visit:
+            node = to_visit.pop(0)
+
+            if node.data == data:
+                return node
+
+            to_visit.extend(node.children)
 
 if __name__ == "__main__":
     import doctest
